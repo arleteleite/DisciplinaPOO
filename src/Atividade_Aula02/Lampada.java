@@ -2,7 +2,7 @@ package Atividade_Aula02;
 
 public class Lampada {
     boolean estado; //por padrão as variáveis do tipo boolean iniciam com o valor FALSE.
-    //as variáveis do tipo primitivo não precisam ser inicializadas.
+    //as variáveis intancia não precisam ser inicializadas, pois já são inicializadas por padrão.
     //estado é uma variavel de instância, pois foi criada dentro da classe.
 
     void acender(){
