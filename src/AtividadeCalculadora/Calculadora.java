@@ -1,5 +1,5 @@
 package AtividadeCalculadora;
-
+//classe criadas com as operações matemáticas.
 public class Calculadora {
     double n1, n2;
 
