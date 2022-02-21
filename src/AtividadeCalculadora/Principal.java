@@ -26,7 +26,7 @@ public class Principal {
         System.out.println("A subtração é: "+c1.subtrair());
         System.out.println("O valor da expoenciação é: "+c1.expoente());
         //System.out.println("Os valores em binário são: "+);
-        b1.decimal_Binario();
+        b1.imprimeResultado((int) v[0], (int) v[1]);
 
 
 

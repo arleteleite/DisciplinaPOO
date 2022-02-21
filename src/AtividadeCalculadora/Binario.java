@@ -3,53 +3,30 @@ package AtividadeCalculadora;
 import java.util.Stack;
 
 public class Binario {
-    //int numero = 12;
-   Auxilia aux2 = new Auxilia();
-    double v[] = aux2.obterValores();
+    void imprimeResultado(int num1, int num2){
+        System.out.println(num1 + " em binário é: " + decimalBinario(num1));
+        System.out.println(num2 + " em binário é: " + decimalBinario(num2));
+    }
 
-    Calculadora c1 = new Calculadora();
+    public static String decimalBinario(int numero){
 
-
-
-   /** String binario(double num1){
-        Stack<Double>pilha = new Stack<>();
+        Stack<Integer> pilha = new Stack<>();//nas pilhas o primeiro elemento a entrar é o ultimo a sair.
         String numBinario = "";
-        double resto;
-        */
+        Calculadora c1 = new Calculadora();
+        int resto;
 
-        void decimal_Binario(){
-            c1.preencher(v[0], v[1]);
-            Stack<Integer>stack = new Stack<Integer>();
-            while(v[0]>0){
-                int r = (int) (v[0]%2);
-                stack.push(r);
-                v[0]/=2;
+          while (numero > 0){
+                resto = numero % 2;
+                pilha.push(resto);//empilha o resto
+                numero /= 2; //numero = numero /2
             }
 
-            System.out.print(v[0]+" em binário é: ");
-            while (!(stack.isEmpty())){
-                System.out.print(stack.pop());
+          while (!pilha.isEmpty()){
+                numBinario += pilha.pop();//desfaz a pilha
             }
-        }
-/**
-        while (num1>0){
-            resto = num1%2;
-            pilha.push(resto);
-            num1 /= 2; //numero = numero/2
-        }
 
-        while (!pilha.isEmpty()){
-            numBinario += pilha.pop();
-        }
-        return numBinario;
+          return numBinario;
     }
-
-    void imprimeBinario(double num1){
-        for(int i=1; i<2; i++){
-            System.out.println(num1+" em binário é: "+binario(num1));
-        }
-    }
- */
 
 }
 
