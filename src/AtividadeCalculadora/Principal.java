@@ -11,7 +11,7 @@ public class Principal {
         //criando um objeto do tipo calculadora
         Calculadora c1 = new Calculadora();
 
-        Binario b1 = new Binario();
+
 
 /**
         c1.n1 = num1;
@@ -25,10 +25,7 @@ public class Principal {
         System.out.println("A soma é: "+c1.somar());
         System.out.println("A subtração é: "+c1.subtrair());
         System.out.println("O valor da expoenciação é: "+c1.expoente());
-        //System.out.println("Os valores em binário são: "+);
-        b1.imprimeResultado((int) v[0], (int) v[1]);
-
-
+        c1.converterBinario();
 
     }
 }
